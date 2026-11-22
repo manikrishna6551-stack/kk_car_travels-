@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KK Car Travels | Book Your Ride</title>
+<style>
+:root{--red:#d92332;--ink:#171717;--muted:#666;--line:#ececec;--soft:#fafafa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px);border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:5}
+.brand{font-weight:900;letter-spacing:.3px;font-size:21px}.brand span{color:var(--red)}
+nav{display:flex;gap:24px}nav a{color:#333;text-decoration:none;font-size:14px;font-weight:700}
+.call{background:var(--red);color:white;padding:12px 17px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:88px 20px 82px;text-align:center;background:#fff}.hero:before{content:"";position:absolute;z-index:-1;inset:-18px;background:linear-gradient(rgba(255,255,255,.84),rgba(255,255,255,.84)),url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;filter:blur(3px);opacity:.32;transform:scale(1.04)}.eyebrow{color:var(--red);font-weight:800;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.06;margin:18px 0 16px;font-weight:900}h1 span{color:var(--red)}
+.hero p{color:var(--muted);font-size:18px;margin:0 auto;max-width:600px;line-height:1.6}
+.primary{display:inline-block;margin-top:28px;background:var(--red);color:#fff;text-decoration:none;padding:15px 25px;border-radius:8px;font-weight:800}
+section{padding:64px max(5vw,22px)}.section-head{text-align:center;margin-bottom:30px}.section-head h2{font-size:32px;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:1100px;margin:auto}
+.service{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff}.service img{width:100%;height:225px;object-fit:cover;display:block;background:#eee}
+.service .body{padding:20px}.service h3{margin:0 0 8px;font-size:20px}.service p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.booking{background:var(--soft)}.form-wrap{max-width:760px;margin:auto;background:white;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 8px 30px #00000008}
+form{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:800}input,select,textarea{width:100%;padding:14px;border:1px solid #ddd;border-radius:8px;font:inherit;background:#fff}input:focus,textarea:focus,select:focus{outline:2px solid #f5b6bc;border-color:var(--red)}
+.submit{grid-column:1/-1;border:0;background:#159447;color:#fff;border-radius:9px;padding:16px;font-size:16px;font-weight:800;cursor:pointer}.hint{font-size:12px;color:var(--muted);line-height:1.5;margin:12px 0 0}
+footer{text-align:center;padding:35px 20px;background:#fff;border-top:1px solid var(--line)}footer strong{font-size:20px}footer p{color:var(--muted);font-size:13px}
+@media(max-width:700px){nav{display:none}.services{grid-template-columns:1fr}.service img{height:210px}form{grid-template-columns:1fr}.field.full,.submit{grid-column:auto}.hero{padding:70px 20px}.form-wrap{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">KK <span>CAR TRAVELS</span></div>
+  <nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#booking">BOOKING</a><a href="#contact">CONTACT</a></nav>
+  <a class="call" href="tel:+919989419445">Call Now</a>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="eyebrow">SAFE • COMFORTABLE • ON-TIME</div>
+    <h1>WELCOME TO<br><span>KK CAR TRAVELS</span></h1>
+    <p>Your Journey, Our Responsibility. Comfortable travel for local trips, outstation journeys, airport transfers and family trips.</p>
+    <a class="primary" href="#booking">BOOK YOUR RIDE</a>
+  </section>
+
+  <section id="services">
+    <div class="section-head"><h2>Our Services</h2><p>Choose the trip that suits your journey.</p></div>
+    <div class="services">
+      <article class="service">
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=85" alt="Car driving through a city street">
+        <div class="body"><h3>Local Trips</h3><p>Convenient rides for city travel, errands and daily destinations.</p></div>
+      </article>
+      <article class="service">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85" alt="Green mountain valley and scenic nature landscape">
+        <div class="body"><h3>Outstation Trips</h3><p>Explore beautiful destinations and scenic nature views. Nature imagery only—no car photo in this section.</p></div>
+      </article>
+      <article class="service">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85" alt="Airport terminal and airplane">
+        <div class="body"><h3>Airport Pickup &amp; Drop</h3><p>Plan a convenient pickup or drop-off for your airport journey.</p></div>
+      </article>
+      <article class="service">
+        <img src="https://stimg.cardekho.com/images/car-images/930x620/Kia/Carens/10306/1741683778883/Clear-White_d1d1d1.jpg?tr=w-898" alt="Kia Carens 7-seater MPV">
+        <div class="body"><h3>Family Trips</h3><p>Kia Carens 7-Seater – comfortable space for your family journeys.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="section-head"><h2>Book Your Trip</h2><p>Fill in your details. Your request will open in WhatsApp.</p></div>
+    <div class="form-wrap">
+      <form id="bookingForm">
+        <div class="field"><label for="name">Customer Name *</label><input id="name" required placeholder="Enter your name"></div>
+        <div class="field"><label for="mobile">Mobile Number *</label><input id="mobile" required type="tel" inputmode="tel" placeholder="Your mobile number"></div>
+        <div class="field"><label for="date">Journey Date *</label><input id="date" required type="date"></div>
+        <div class="field"><label for="time">Pickup Time *</label><input id="time" required type="time"></div>
+        <div class="field"><label for="pickup">Pickup Location *</label><input id="pickup" required placeholder="Where should we pick you up?"></div>
+        <div class="field"><label for="destination">Destination *</label><input id="destination" required placeholder="Where do you want to go?"></div>
+        <div class="field full"><label for="passengers">Number of Passengers *</label><select id="passengers" required><option value="">Select passengers</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+        <button class="submit" type="submit">Send Booking Request on WhatsApp</button>
+      </form>
+      <p class="hint">WhatsApp will open with your booking details addressed to KK Car Travels. Please press Send in WhatsApp to deliver the request. A booking is confirmed only after the owner responds.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <strong>KK <span style="color:var(--red)">CAR TRAVELS</span></strong>
+  <p>Call / WhatsApp: <a href="tel:+919989419445" style="color:var(--red);font-weight:bold">+91 99894 19445</a></p>
+  <p>Thank you for choosing KK Car Travels.</p>
+</footer>
+<script>
+const ownerNumber = "919989419445";
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const value = id => document.getElementById(id).value.trim();
+  const msg = [
+    "New Booking Request - KK Car Travels",
+    "Customer Name: " + value("name"),
+    "Customer Mobile: " + value("mobile"),
+    "Journey Date: " + value("date"),
+    "Pickup Time: " + value("time"),
+    "Pickup Location: " + value("pickup"),
+    "Destination: " + value("destination"),
+    "Passengers: " + value("passengers"),
+    "",
+    "Please confirm availability."
+  ].join("\n");
+  window.open("https://wa.me/" + ownerNumber + "?text=" + encodeURIComponent(msg), "_blank");
+});
+</script>
+</body>
+</html>
